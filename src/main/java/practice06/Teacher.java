@@ -18,9 +18,8 @@ public class Teacher extends Person{
 
   @Override
   public String introduce() {
-    return super.introduce()+"I am a Teacher. "+
-        klass==null?"I teach Class "+klass+".":"I teach No Class."
-        ;
+    return super.introduce()+" I am a Teacher."+
+        (klass==null?" I teach No Class.":" I teach Class "+klass+".");
   }
 
   public Integer getKlass() {
